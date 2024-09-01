@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F4F4; 
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; 
+}
+
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(255, 182, 193, 0.7), rgba(255, 105, 180, 0.7)), url('beautglow.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: 0;
+}
+
+.content {
+    z-index: 1;
+    color: #fff;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.cta-button {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF1493;
+    transform: scale(1.05);
+}
+
+/* Seção Sobre */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    color: #DAA520;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #555;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-list li {
+    font-size: 18px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-list span {
+    font-size: 24px;
+    color: #FF69B4;
+    margin-right: 10px;
+}
+
+/* Seção de Produtos */
+.products {
+    padding: 60px 20px;
+    background-color: #F8F4F4;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    color: #DAA520;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 22px;
+    color: #FF1493;
+    margin-bottom: 10px;
+}
+
+.product-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF69B4;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-button:hover {
+    background-color: #FF1493;
+    transform: scale(1.05);
+}
+
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    color: #DAA520;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #555;
+}
+
+.whatsapp-btn {
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #FF69B4;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
